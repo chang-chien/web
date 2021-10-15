@@ -29,7 +29,7 @@
           <a class="nav-link" href="#">排行榜</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">關於我們</a>
+          <a class="nav-link" href="#">意見回饋</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">店家介紹</a>
@@ -55,8 +55,8 @@
     <br>
     <h1>師大商圈</h1>
     <p>內文內文內文內文內文內文內文內文內文內文內文</p>
-    <input class="btn btn-lg btn-primary" type="button" value="註冊會員" onclick="location.href='https://ypprarg.herokuapp.com/register'">
-    <input class="btn btn-lg btn-primary" type="button" value="登入會員" onclick="location.href='https://ypprarg.herokuapp.com/login'">
+    <input class="btn btn-lg btn-primary" type="button" value="註冊會員" onclick="location.href='register.html'">
+    <input class="btn btn-lg btn-primary" type="button" value="登入會員" onclick="location.href='login.html'">
     <br>
     <br>
     <br>
@@ -69,20 +69,5 @@
   <footer>
       <p class="footer-text">僅供 @2021 Line Fresh 商業競賽 使用&emsp;&emsp;</p>
   </footer>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js'></script>
-  <script>
-    $('#lineLoginBtn').on('click', function(e) {
-      // 記得要改
-      let client_id = '1656522074';
-      let redirect_uri = 'https://chang-chien.github.io/web/';
-      let link = 'https://access.line.me/oauth2/v2.1/authorize?';
-      link += 'response_type=code';
-      link += '&client_id=' + client_id;
-      link += '&redirect_uri=' + redirect_uri;
-      link += '&state=login';
-      link += '&scope=openid%20profile';
-      window.location.href = link;
-    });
-  </script>
 </body>
 </html>
